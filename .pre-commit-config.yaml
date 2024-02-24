@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: check-aws-credentials
+        name: Check AWS Credentials
+        entry: ./check_aws_credentials.sh
+        language: script
+        stages:
+          - commit  
