@@ -7,6 +7,7 @@ jobs:
   BuildSimulation:
     # TODO abort this workflow if the git user triggered it is not the release manager
     runs-on: ubuntu-latest
+    if: github.actor == 'fairy3'
     steps:
       - uses: actions/checkout@v3
       - name: Build
